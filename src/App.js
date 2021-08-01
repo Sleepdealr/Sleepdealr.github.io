@@ -1,6 +1,6 @@
-import pfp from './Content/boygif.gif';
 import './App.css';
 import Navbar from "./Components/Navbar";
+import Home from "./Pages/Home"
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import Projects from './Pages/Projects'
@@ -14,27 +14,13 @@ function App() {
             <Router>
                 <Switch>
                     <Route path="/" exact component={Home} />
-                    <Route path="/about" components={About} />
-                    <Route path="/contact" components={Contact} />
-                    <Route path="/projects" components={Projects} />
+                    <Route path="/projects"  components={Projects} />
+                    <Route path="/about"  components={About} />
+                    <Route path="/contact"  components={Contact} />
                 </Switch>
             </Router>
         </div>
     );
 }
-
-const Home = () => (
-  <div>
-      <div className="App">
-          <body className="App-header">
-          <p>
-              I hate React
-          </p>
-          <img src={pfp} className={"home-header-img"} alt="pfp"/>
-          </body>
-      </div>
-  </div>
-);
-
 
 export default App;

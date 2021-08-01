@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import './Navbar.css'
 import {Reorder} from "@material-ui/icons";
-import {Link} from 'react-router-dom';
 
 function Navbar(){
     const [showLinks, setShowLinks] = useState(false);
