@@ -11,10 +11,9 @@ function App() {
     return (
         <div>
             <Navbar/>
-            <Router>
+            <Router basename={process.env.PUBLIC_URL }>
                 <Switch>
-
-                    <Route path="/projects"   component={Projects} ></Route>
+                    <Route path="/projects"   component={Projects} />
                     <Route path="/about"   component={About} />
                     <Route path="/contact"   component={Contact} />
                     <Route path="/" exact component={Home} />
