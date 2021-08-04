@@ -11,7 +11,7 @@ function App() {
     return (
         <div>
             <Navbar/>
-            <Router basename={process.env.PUBLIC_URL }>
+            <Router basename="/react-website">
                 <Switch>
                     <Route path="/projects"   component={Projects} />
                     <Route path="/about"   component={About} />
